@@ -31,16 +31,20 @@
     </div>
 
 
-    <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+    <div class="Brothers">
+        <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+    </div>
 
 
     <!-- coloque seu email aqui, depois sempre colocar name="nome"/ name="telefone"/ name="inf"  -->
-    <form class="fale-conosco" action="https://formsubmit.co/leandronegocio60@gmail.com" method="POST"> 
+<div class="abc"></div>
+    <form class="fale-conosco" action="https://formsubmit.co/leandronegocio60@gmail.com" method="POST">
         <input placeholder="Seu nome" type="text" name="nome">
         <input placeholder="Seu telefone" type="tel" name="telefone">
         <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
         <button onclick="sumirFormulario()"> Enviar Formulário</button>
     </form>
+
 
 
 
@@ -53,16 +57,27 @@
     let mascara = document.querySelector(".mascara-form")
 
 
-function cliqueiNoBotao (){
-    Formulario.style.left = "700px"
-    mascara.style.visibility = "visible"
-   
-}
+    function cliqueiNoBotao() {
+        Formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+       
+        
+        if(document.body.clientWidth < 700){ //modo responsividade
+            form.style.left = "35px";
+            form.style.transition = "left 1s linear";
+            mascaraform.style.visibility = "visible"
 
-function sumirFormulario(){
-    Formulario.style.left = "-320px"
-    mascara.style.visibility = "hidden"
-}
+        }
+        
+
+
+
+    }
+
+    function sumirFormulario() {
+        Formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+    }
 
 
 

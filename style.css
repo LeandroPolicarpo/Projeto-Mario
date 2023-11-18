@@ -117,5 +117,41 @@ textarea {
     z-index: 3;
 }
 
+@media screen and (max-width:700px) {
+
+    body {
+        display: block;
+        padding-top: 5px;
+    }
+
+    .caixa-principal {
+        width: 589px;
+        font-size: 10px;
+        margin-left:20px;
+    }
+    
+    .imagem-mario-luigi {
+        width: 550px;      
+    }
+
+    .Brothers {
+        margin-left:15px;
+              
+    }
+
+    .fale-conosco {
+        top: 225px;
+        left: -330px;
+        transition: left 1s linear;
+              
+
+    }
+   
 
 
+
+
+
+
+
+}
